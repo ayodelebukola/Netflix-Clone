@@ -1,0 +1,368 @@
+/* General Styling */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: black;
+  color: #fff;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+main {
+  border-bottom: 8px solid #222;
+}
+
+/* Header Styling */
+.header-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-top: 20px;
+  z-index: 2;
+}
+.header-top img {
+  margin-left: 56px;
+}
+.header-top a {
+  margin-right: 56px;
+  cursor: pointer;
+}
+.sign-in {
+  background-color: #e50914;
+  color: #fff;
+  padding: 7px 17px;
+  border: none;
+  border-radius: 3px;
+  float: right;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: normal;
+  cursor: pointer;
+}
+.sign-in:hover {
+  opacity: 0.9;
+}
+
+.background {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.background::after {
+  width: 100%;
+  height: 100vh;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.to-fit {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.background-overlay {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.4);
+    background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.8) 0,
+      rgba(0, 0, 0, 0) 60%,
+      rgba(0, 0, 0, 0.8) 100%
+    );
+  }
+.content {
+  position: absolute;
+  top: 35%;
+  left: 25%;
+  z-index: 2;
+}
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  line-height: 1.1;
+}
+.box h2 {
+  font-size: 50px;
+  color: #fff;
+  letter-spacing: 2px;
+}
+.box h4 {
+  font-size: 26px;
+  color: #fff;
+  font-weight: 400;
+  margin: 16px auto;
+  padding-bottom: 15px;
+}
+
+.box h6,
+.sixthsection h6 {
+  font-size: 19.2px;
+  font-weight: 500;
+  color: #fff;
+  padding-bottom: 20px;
+}
+
+.email-section,
+.email-section2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.email-section input,
+.email-section2 input {
+  font-size: 16px;
+  border: 0.5px solid gray;
+  color: black;
+  outline: none;
+  padding: 10px 0;
+  min-width: 480px;
+  height: 60px;
+  align-items: center;
+}
+
+.email-section input::placeholder,
+.email-section2 input::placeholder {
+  font-size: 16px;
+  padding: 0 10px;
+}
+.get-started,
+.get-started2 {
+  text-decoration: none;
+  color: #fff;
+  border: 0.5px solid #e50914;
+  background-color: #e50914;
+  font-size: 26px;
+  height: 60px;
+  padding: 0px 26px;
+}
+
+.secondsection,
+.thirdsection,
+.fifthsection {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 45px 70px;
+  margin: 0 auto;
+  color: #fff;
+  border-bottom: 8px solid #222;
+}
+
+.secondsection .leftside,
+.secondsection .rightside,
+.thirdsection .leftside,
+.thirdsection .rightside,
+.fourthsection .leftside,
+.fifthsection .leftside,
+.fifthsection .rightside {
+  width: 50%;
+  padding-left: 20px;
+}
+
+.secondsection .leftside h2,
+.thirdsection .rightside h2,
+.fourthsection .leftside h2,
+.fifthsection .rightside h2,
+.sixthsection .center h2 {
+  font-size: 50px;
+  font-weight: 700;
+  margin-bottom: 0px 0px 8px;
+}
+
+.secondsection .leftside h4,
+.thirdsection .rightside h4,
+.fourthsection .leftside h4,
+.fifthsection .rightside h4 {
+  font-size: 26px;
+  font-weight: 400;
+  margin: 19.5px 0px 6.5px;
+  
+}
+
+.secondsection .image {
+  position: relative;
+  z-index: 1;
+  padding-bottom: 40px;
+}
+
+.secondsection .image img {
+  float: right;
+  width: 100%;
+  background: transparent;
+}
+
+.secondsection .video {
+  position: absolute;
+  right: 115px;
+  bottom: -420px;
+}
+.secondsection .leftside{
+    padding-left: 60px;
+}
+
+
+.thirdsection .leftside .first img {
+  width: 80%;
+  height: 80%;
+}
+
+.thirdsection .leftside .second img {
+  width: 20%;
+  height: 100%;
+}
+.thirdsection .leftside .second{
+    display: flex;
+    justify-content:start;
+}
+.thirdsection .second{
+    border: 2px solix white;
+    position: absolute;
+    width: 100%;
+    top: 95em;
+    left: 11em;
+    max-width: 300px;
+    display: flex;
+    align-items: center;
+    background-color: black;
+    border: 2px solid rgba(255, 255, 255, 0.25);
+    border-radius: 10px;
+    height: 80px;
+    padding: 0.25rem 0.6rem;
+    gap: 15px;
+}
+.thirdsection h5{
+    font-size: 16px;
+  font-weight: 500;
+}
+.thirdsection h6{
+    font-size: 14px;
+  font-weight: 400;
+  color: #0071eb;
+}
+.gif{
+    width: 100%;
+    height: 100%
+}
+.fourthsection {
+  padding: 50px 105px;
+  border-bottom: 8px solid #222;
+}
+
+.fifthsection .leftside img {
+  width: 100%;
+  height: 100%;
+  padding: 45px 30px;
+}
+
+.sixthsection {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 8px solid #222;
+}
+
+.sixthsection .center h2 {
+  padding: 50px 0;
+}
+
+.subdiv button {
+  border: 0;
+  font-size: 26px;
+  font-weight: 400;
+  margin: 4px 270px;
+  padding: 0.8em 2.2em 0.8em 1.2em;
+  width: 60%;
+  color: #fff;
+  background: #303030;
+  text-align: left;
+}
+details > summary {
+  list-style: none;
+}
+summary {
+  display: flex;
+  justify-content: space-between;
+}
+
+.email-section2 {
+  padding-bottom: 70px;
+}
+
+.subsubdiv h6 {
+  padding-top: 60px;
+}
+
+/* Footer Styling*/
+.footer a:hover {
+  text-decoration: underline;
+}
+.footer {
+  padding: 70px 45px 0px;
+  max-width: 70%;
+  margin: 20px auto;
+}
+.footer a {
+  color: #737373;
+  font-size: 13px;
+  text-decoration: none;
+}
+
+.footer .firstitem {
+  font-size: 16px;
+  padding-top: 20px;
+}
+.footer-items {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2rem;
+  margin-bottom: 16px;
+  padding: 0 12px 0 0;
+}
+
+.footer-items ul {
+  padding-top: 30px;
+  padding-bottom: 20px;
+  list-style-type: none;
+}
+.footer-items li {
+  margin-bottom: 16px;
+  min-width: 100px;
+  text-decoration: none;
+}
+
+.footer .last-item {
+  font-size: 13px;
+  color: #737373;
+  display: block;
+  align-items: flex-start;
+}
